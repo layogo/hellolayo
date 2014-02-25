@@ -23,9 +23,9 @@ alias vd='vimdiff '
 #alias vi='vim'
 alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
-alias -s html=mate   # 在命令行直接输入后缀为 html 的文件名，会在 TextMate 中打开
-alias -s rb=mate     # 在命令行直接输入 ruby 文件，会在 TextMate 中打开
-alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
+alias -s html=mate 
+alias -s rb=mate  
+alias -s py=vi    
 alias -s js=vi
 alias -s c=vi
 alias -s java=vi
@@ -36,8 +36,29 @@ alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 # end zsh
 #rvm
-alias r87='rvm use 1.8.7@rails320'
+alias r87='rvm use 1.8.7@rails3020'
 alias r20='rvm use 2.0.0@rails40'
 
 #git
 alias gs='git status'
+
+#server list
+source /Users/yulin/workplace/server-alias/android-ge.server
+source /Users/yulin/workplace/server-alias/ge.server
+source /Users/yulin/workplace/server-alias/gt.server
+source /Users/yulin/workplace/server-alias/ie.server
+source /Users/yulin/workplace/server-alias/base.developer.server
+source /Users/yulin/workplace/server-alias/others.server
+
+export PATH=$PATH:/usr/local/redis-2.8.6/src/
+
+#mongo db 
+alias mos='mongod --dbpath=/data/db --logpath=/data/log/mongo/mongo.log --fork'
+alias molog='tail -f /data/log/mongo/mongo.log'
+
+
+#update alias tools and update zshrc
+alias ua='vi /Users/yulin/workplace/hellolayo/alias-tools.sh && source ~/.zshrc'
+alias reload='source ~/.zshrc'
+
+
