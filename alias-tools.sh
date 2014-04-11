@@ -5,14 +5,15 @@ alias an='cd /Users/yulin/workplace/android'
 
 
 #gt
-alias gt='cd /Users/yulin/workplace/ios/gt'
+alias gt='cd /Users/yulin/workplace/ios/gt && r87'
+alias gtnode='cd /Users/yulin/workplace/ios/gt/node/global-theat-server/node-server/ && pwd'
 alias gts='cd /Users/yulin/workplace/ios/gt/global-theat-server && r87'
 #ge
-alias ge='cd /Users/yulin/workplace/ios/ge'
+alias ge='cd /Users/yulin/workplace/ios/ge && r20'
 alias ges='cd /Users/yulin/workplace/ios/ge/galaxy-server && r20'
 #ange
-alias age='cd /Users/yulin/workplace/android/ge'
-alias ages='cd /Users/yulin/workplace/android/ge/galaxy-server && r87'
+alias age='cd /Users/yulin/workplace/android/ge && r20'
+alias ages='cd /Users/yulin/workplace/android/ge/galaxy-server && r20'
 ############## dir alias #############
 
 # zsh 
@@ -41,6 +42,7 @@ alias r20='rvm use 2.0.0@rails40'
 
 #git
 alias gs='git status'
+alias grd='git push origin --delete '
 
 #server list
 source /Users/yulin/workplace/server-alias/android-ge.server
@@ -53,7 +55,7 @@ source /Users/yulin/workplace/server-alias/others.server
 export PATH=$PATH:/usr/local/redis-2.8.6/src/
 
 #mongo db 
-alias mos='mongod --dbpath=/data/db --logpath=/data/log/mongo/mongo.log --fork'
+alias mos='mongod --dbpath=/data/db --logpath=/data/log/mongo/mongo.log --fork '
 alias molog='tail -f /data/log/mongo/mongo.log'
 
 
