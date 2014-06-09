@@ -58,7 +58,12 @@ export PATH=$PATH:/usr/local/redis-2.8.6/src/
 alias mos='mongod --dbpath=/data/db --logpath=/data/log/mongo/mongo.log --fork '
 alias molog='tail -f /data/log/mongo/mongo.log'
 
+#rails 
+alias ra='rails '
+alias ras='ra s -p'
+alias rasp='ra s -e production p'
 
+alias conn=" read -p 'ip:' ip; ssh -i /Users/yulin/.ssh/0422 ubuntu@$ip"
 #update alias tools and update zshrc
 alias ua='vi /Users/yulin/workplace/hellolayo/alias-tools.sh && source ~/.zshrc'
 alias reload='source ~/.zshrc'

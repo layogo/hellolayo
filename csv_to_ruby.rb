@@ -47,6 +47,7 @@ def csv_to_ruby(path_to='/Users/yulin/Documents/ge-push-locales.csv')
         end
         p con
         if con.size == 1
+          next if con.first.nil? 
           con = con.first.gsub('"', '\"').gsub("\n", '')
           file.write "'#{lan}' => \"#{con}\",\n"
         else
