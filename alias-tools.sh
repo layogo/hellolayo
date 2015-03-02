@@ -14,6 +14,12 @@ alias ges='cd /Users/yulin/workplace/ios/ge/galaxy-server && r20'
 #ange
 alias age='cd /Users/yulin/workplace/android/ge && r20'
 alias ages='cd /Users/yulin/workplace/android/ge/galaxy-server && r20'
+#ie
+alias ie='cd /Users/yulin/workplace/ios/ie && r87'
+alias ies='cd /Users/yulin/workplace/ios/ie/island-server && r87'
+alias ieg='cd /Users/yulin/workplace/ios/ie/island-gateway && r87'
+
+alias ughui='cd /Users/yulin/workplace/heroku/ughui && rvm use 2.0.0@rails40.ughui'
 ############## dir alias #############
 
 # zsh 
@@ -38,7 +44,7 @@ alias -s bz2='tar -xjvf'
 # end zsh
 #rvm
 alias r87='rvm use 1.8.7@rails3020'
-alias r20='rvm use 2.0.0@rails40'
+alias r20='rvm use ruby-2.0.0-p598@rails40'
 
 #git
 alias gs='git status'
@@ -55,7 +61,7 @@ source /Users/yulin/workplace/server-alias/others.server
 export PATH=$PATH:/usr/local/redis-2.8.6/src/
 
 #mongo db 
-alias mos='mongod --dbpath=/data/db --logpath=/data/log/mongo/mongo.log --fork '
+alias mos='mongod --dbpath=/Users/yulin/data/db --logpath=/Users/yulin/data/log/mongo.log --fork '
 alias molog='tail -f /data/log/mongo/mongo.log'
 
 #rails 
@@ -63,9 +69,8 @@ alias ra='rails '
 alias ras='ra s -p'
 alias rasp='ra s -e production p'
 
-alias conn=" read -p 'ip:' ip; ssh -i /Users/yulin/.ssh/0422 ubuntu@$ip"
+alias conn=" read -p 'ip:' ip; ssh -i /Users/yulin/.ssh/0711 ubuntu@$ip"
 #update alias tools and update zshrc
 alias ua='vi /Users/yulin/workplace/hellolayo/alias-tools.sh && source ~/.zshrc'
 alias reload='source ~/.zshrc'
-
 
